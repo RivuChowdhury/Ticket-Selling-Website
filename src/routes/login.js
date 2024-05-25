@@ -10,9 +10,7 @@ router.get('/login',(req,res)=>{
 
 router.post('/authenticate',handleAuthentication);
 
-//router.post('/account',restrictToLoggedInUserOnly,handleUserLogin);
 router.get('/account',restrictToLoggedInUserOnly,handleUserLogin);
-//router.get('/account',handleUserLogin);
 
 router.post('/forgot-password',(req,res)=>{
     res.render(path.join(__dirname,'../views/forgot-password'));
