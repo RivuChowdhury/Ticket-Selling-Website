@@ -1,0 +1,171 @@
+body {
+  font-family:'Courier New', Courier, monospace;
+  background-color: #f2f2f2;
+}
+
+#loan-form {
+  max-width: 10000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #9a3d8b;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+div.container {
+background-image: linear-gradient(140deg, #EADEDB 0%, #8879df 50%, #53e0b6 75%);
+margin: 5px;
+padding: 200px;
+border: 1px solid rgb(55, 4, 225);
+border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 150%;
+  padding: 15px;
+  border: 1px solid #a32b2b;
+  border-radius: 4px;
+  text-align:left;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #45a049;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3e18e6;
+  font-family:'Courier New', Courier, monospace;
+  color: white;
+}
+#title h1{
+  text-align: center;
+  color: white;
+  font-family: inherit;
+}
+
+.text-center {
+ text-align: left;
+ margin: 10px;
+ color:#151616
+}
+.container1{
+  width: 100%;
+  height: 90%;
+  margin: 1% auto;
+  display: flex;
+  flex: 1 1 100%;
+  overflow: hidden;
+  align-items: stretch;
+    justify-content: space-between;
+  box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .container1 {
+    flex-direction: column;
+    width: 375px; 
+  }
+  .left {
+    height: 100%;
+  }
+}
+
+.left {
+  background-color: #1E88E5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:url(/images/loanimage.jpg);
+  background-size: 100% 98%;
+  
+  /* background-image: url('https://images.pexels.com/photos/14035710/pexels-photo-14035710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+}
+
+.right {
+  position: relative;
+  background: #E91E63;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+form {
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+#loan-form{
+  padding: 5px; 
+}
+@media (min-width: 480px) {
+  form {
+    padding: 1rem;
+    display: block;
+  }
+}
+
+
+.container {
+  width: 100%;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.container:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+#userId-lebel,
+#username-label,
+#loantype-label,
+#time-label,
+
+#checkbox-label,
+#textarea-label{
+  display: flex;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+
+  
+   

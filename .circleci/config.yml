@@ -1,0 +1,22 @@
+version: 2.1
+
+workflows:
+  version: 2
+  add-data-to-csv:
+    jobs:
+      - add-data-to-csv:
+          filters:
+            branches:
+              only:
+                - master
+
+jobs:
+  add-data-to-csv:
+    docker:
+      - image: circleci/node:10.15.3
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
+      -

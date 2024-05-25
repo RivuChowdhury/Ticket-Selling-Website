@@ -1,0 +1,718 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.h1{
+    font-size: 1.5rem;
+    text-align: center;
+
+
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 1% 1%;
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+    width: 100%;
+}
+/* navbar degings start*/
+.navbar{
+    background-color: #0c6168;
+    text-align: center;
+
+}
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+
+
+}
+.navbar-menu a{
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+
+
+
+}
+.navbar-menu a:hover{
+    background-color: grey;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/*navbar degins end*/
+
+
+/* profile designed starts here*/
+
+.profile{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+
+}
+.profile .top-whether-icon{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    width: 150px;
+    height: 120px;
+    transition: transform 2s;
+}
+.profile .top-whether-icon:hover{
+    transform: rotate(360deg);
+}
+.profile-desc h1{
+    font-family: 'satisfy',cursive;
+    font-size: 3rem;
+
+}
+.profile-desc p{
+    color: grey;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    width: 90%;
+
+}
+
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* profile designed ends here*/
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* about us design starts here  */
+
+
+.about-area {
+    padding: 100px 0 70px;
+    background: #F2F9FD;
+}
+.about-col-6 {
+    margin-bottom: 30px;
+    margin-left: 15%;
+}
+.about-col-6 h2 {
+    font-size: 40px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    
+}
+.about-col-6 h2 span {
+    color: #f17733;
+}
+.about-col-4 h4 {
+    margin-bottom: 0px;
+    color: #6f6f6f;
+}
+.about-col-6 p {
+    margin-bottom: 30px;
+}
+
+
+/* About Two CSS */
+.about-two-area {
+    padding: 45px 0 70px;
+    position: relative;
+}
+.about-two-area .about-col {
+    margin-bottom: 30px;
+}
+.about-box {
+    margin-top: 20px;
+    background: #ffffff;
+    margin-bottom: 30px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 22px 43px rgba(31,45,234,.2);
+    -moz-box-shadow: 0 22px 43px rgba(31,45,234,.2);
+    box-shadow: 0 15px 43px rgba(60, 71, 103, 0.52);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.about-box:hover {
+    border: 1px solid #dddddd;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.about-box i {
+    color:#e4a224;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.about-box h4 {
+    margin-bottom: 0;
+}
+.about-img-col-6 {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 0;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    margin-left: 20%;
+}
+.about-img-col-6:hover {
+    display: block;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.about-img-col-6 img {
+    position: relative;
+ border-radius: 10px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* About Inner CSS */
+.about-inner-area {
+    padding: 100px 0 50px;
+}
+.about-inner-col {
+    margin-bottom: 100px;
+}
+.about-inner-col h2 {
+    font-size: 36px;
+    line-height: 28px;
+}
+.about-inner-col h4 {
+    margin-bottom: 20px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}
+.choose-col {
+    margin-bottom: 50px;
+}
+.choose-col img {
+}
+.choose-col h2 {
+    font-size: 36px;
+}
+.choose-col p {
+    margin-bottom: 30px;
+}
+.choose-col ul li {
+    display: block;
+    background: #f5f5f5;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.choose-col ul li i {
+    color: #82b440;;;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about me design ends here  */
+
+
+
+
+/* professional-experience starts here */
+
+
+
+.service-area {
+    padding: 100px 0 70px;
+}
+.service-col {
+    margin-bottom: 30px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.service-content {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 30px 20px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.service-content h3 {
+    margin-bottom: 10px;
+}
+.service-content h3 a {
+    color: #2d2d2d;
+}
+.service-content h3 a:hover {
+    color: #82b440;
+}
+.service-content p {
+    margin-bottom: 20px;
+}
+
+
+/* Service Two */
+.service-two-area {
+    padding: 50px 0 70px;
+    background:#000000;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.service-two-area:before {
+    content: "";
+    position: absolute;
+    left:0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.95);
+}
+.service-two-area .service-col {
+        background-image: linear-gradient(135deg, #006a8e24, #ffffff);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.service-two-area .service-col:hover {
+    box-shadow: 0px 50px 80px rgba(31,45,234,.2);
+    top: -10px;
+    z-index: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.service-two-area .service-col img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.service-two-area .service-col h4 {
+    font-size: 24px;
+}
+.service-two-area .service-col h4 a {
+    color: #2d2d2d;
+}
+.service-two-area .service-col p {
+    margin-bottom: 20px;
+}
+.service-two-area .service-col i {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* professional-experience ends here  */
+
+
+
+
+
+
+
+
+.service-area {
+    padding: 100px 0 70px;
+}
+.service-col {
+    margin-bottom: 30px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.service-content {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 30px 20px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.service-content h3 {
+    margin-bottom: 10px;
+}
+.service-content h3 a {
+    color: #2d2d2d;
+}
+.service-content h3 a:hover {
+    color: #82b440;
+}
+.service-content p {
+    margin-bottom: 20px;
+}
+
+
+/* Service Two */
+.service-two-area {
+    padding: 50px 0 70px;
+    background:#000000;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.service-two-area:before {
+    content: "";
+    position: absolute;
+    left:0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.95);
+}
+.service-two-area .service-col {
+        background-image: linear-gradient(135deg, #006a8e24, #ffffff);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.service-two-area .service-col:hover {
+    box-shadow: 0px 50px 80px rgba(31,45,234,.2);
+    top: -10px;
+    z-index: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.service-two-area .service-col img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.service-two-area .service-col h4 {
+    font-size: 24px;
+}
+.service-two-area .service-col h4 a {
+    color: #2d2d2d;
+}
+.service-two-area .service-col p {
+    margin-bottom: 20px;
+}
+.service-two-area .service-col i {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact starts from here  */
+.achievemnet-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: white;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+}
+
+
+.contact-links{
+    text-align: center;
+}
+
+.media-buttons .btn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+}
+.btn:hover{
+    background-color: gray;
+}
+
+.achievemnet-contact::after{
+    clear: both;
+    display: table;
+    content: '';
+ }
+
+/*contact ends here  */
+
+/* footer starts from here  */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+.footer-menu a{
+    display: block;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.footer-menu a:hover{
+    color: gray;
+}
+
+.footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+
+/* footer ends here  */
