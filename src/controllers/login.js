@@ -84,13 +84,11 @@ async function handleUserLogin(req, res) {
     }
 }
 
-function handleGetPassword(req,res){
+async function handleGetPassword(req,res){
     var email=req.body.logemail;
-    var query='SELECT Passkey FROM accounts WHERE Customer_Email = ?'
-    pool.query(query, [email],(error, results, fields)=>{
-        //res.render(__dirname+'/public/get-password',{passkey:results});
-        res.render(path.join(__dirname,'../views/get-password'),{passkey:results});
-    })
+    var query='SELECT Passkey FROM accounts WHERE Customer_Email = ?';
+    const [results]=await pool.query(query,[email]);
+    res.render(path.join(__dirname,'../views/get-password'),{passkey:results});
 }
 
 module.exports={
