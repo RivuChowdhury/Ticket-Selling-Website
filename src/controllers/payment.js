@@ -19,8 +19,9 @@ async function handlePayment(req,res){
 
 
   //req.session.orderId = order.id;
-  var sql = 'INSERT INTO newtransactions (payment_id, amount, payment_status,email,Customer_name,descriptions) VALUES (?, ?, ?, ?, ?, ?)';
-  var values = [order.id, amount,'pending',customerEmail,customerName,description];
+  var sql = 'INSERT INTO newtransactions (payment_id, amount, currency, payment_status, email, Customer_name, descriptions) VALUES (?, ?, ?, ?, ?, ?, ?)';
+  var values = [order.id, amount, 'INR', 'pending', customerEmail, customerName, description];
+
 
   pool.query(sql, values, (err, result) => {
       if (err) throw err;
@@ -67,7 +68,7 @@ function handleVerification(req,res){
     });
       
 
-		fs.writeFileSync("/Programming/Web Test/Ticket Resaling (payment status check)/V3/payment1.json", JSON.stringify(req.body, null, 4))
+		//fs.writeFileSync("/Programming/Web Test/Ticket Resaling (payment status check)/V3/payment1.json", JSON.stringify(req.body, null, 4))
 	} else {
 		// pass it
 	}
