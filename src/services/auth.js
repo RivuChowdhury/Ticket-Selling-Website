@@ -9,7 +9,7 @@ function setUser(user){
     };
     //expriesIn is used to expire the jwt token in the cookie after a certain period of time.
     //Here 30 means 30 minutes.
-    return jwt.sign(payload,secret,{expiresIn:30})
+    return jwt.sign(payload, secret, {expiresIn:'30m'});
 }
 
 function getUser(token){
